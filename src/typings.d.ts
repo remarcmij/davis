@@ -4,10 +4,9 @@ interface NodeModule {
   id: string;
 }
 
-declare module "*.peg" {
-  interface Parser
-  {
-      parse(input: string): { data: any[], text: any[] };
+declare module "*.pegjs" {
+  interface Parser {
+    parse(input: string): { data: any[], text: any[] };
   }
 
   const _: Parser;

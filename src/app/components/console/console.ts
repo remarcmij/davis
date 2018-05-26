@@ -1,20 +1,17 @@
-import {Component} from "@angular/core";
+import { Component } from '@angular/core';
 
 @Component({
-    selector: "console",
-    templateUrl: "./console.html"
+  selector: 'console',
+  templateUrl: './console.html'
 })
-export class ConsoleComponent
-{
-    private value: string = "";
+export class ConsoleComponent {
+  private value = '';
 
-    public print(value: string)
-    {
-        this.value += value;
-    }
+  public print(value: string) {
+    this.value += value;
+  }
 
-    private clear()
-    {
-        this.value = "";
-    }
+  private clear() {
+    this.value = '';
+  }
 }

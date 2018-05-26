@@ -1,11 +1,9 @@
-import {Instruction} from "./instruction";
-import {CPU} from "../cpu";
+import { CPU } from '../cpu';
+import { Instruction } from './instruction';
 
-export class Halt extends Instruction
-{
-    execute(cpu: CPU): number
-    {
-        cpu.halt();
-        return cpu.eip;
-    }
+export class Halt extends Instruction {
+  execute(cpu: CPU): number {
+    cpu.halt();
+    return cpu.eip;
+  }
 }

@@ -41,7 +41,7 @@
       }
     ],
     "no-arg": true,
-    "no-bitwise": true,
+    "no-bitwise": false,
     "no-console": [
       true,
       "debug",
@@ -117,13 +117,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "asm",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "asm",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
